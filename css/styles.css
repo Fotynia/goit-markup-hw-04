@@ -36,7 +36,8 @@ ul {
      padding-left: 15px;
      padding-right: 15px;
      margin-left: auto;
-     margin-right: auto;   
+     margin-right: auto; 
+    
  }
 
 h1,
@@ -52,8 +53,6 @@ p {
 
 .container-header {
 display: flex;
-
-
 }
 
 .logo {
@@ -146,6 +145,10 @@ margin-right: 0px;
     color: var(--accent-color);
 }
 
+.header .contacts a.phone:hover, 
+.header .contacts a.phone:focus {
+    color: var(--accent-color);
+}
 .contacts {
     display: flex;
     margin-left: auto;
@@ -166,6 +169,44 @@ margin-left: 50px;
      padding-bottom: 32px;
      margin-left: auto;
     }
+.svgadres {
+    display: flex;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: var(--brend-color);
+    background-size: contain;
+    color: #757575;
+    
+}
+.contacts-item {
+    display: flex;
+    align-items: center;
+}
+
+
+contacts.contacts-item.svgadres:hover use {
+    display: block;
+    color: #2196F3;
+  }
+
+
+  
+
+ /* OVERLAY */
+
+ .overlay {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),url(../img/img1.jpg);
+    outline: 2px solid tomato;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+ }
 
 /* Hero */
 
@@ -173,7 +214,7 @@ margin-left: 50px;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-color: #2F303A;
+    background-color:#C4C4C4;
    }
 
  .hero .hero-title {
@@ -190,6 +231,22 @@ margin-left: 50px;
 
        /* Наші переваги */
 
+       .advantages-card-icon {
+        display: flex;
+        background-color:#F5F4FA;
+      
+       }
+
+       .advantages-icon {
+       background-position: center;
+       height: 70px;
+       width: 70px;
+       }
+
+       .our-advantages {
+        outline: 2px solid slateblue;
+       }
+      
         .our-advantages .title {
                 font-weight: 700;
                 font-size: 14px;
@@ -199,9 +256,28 @@ margin-left: 50px;
                 margin-bottom: 10px;
                  }
 
+                 .advantage {
+                    display: block;
+                    width: 270px;
+                 }
+
+          .advantages-card {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 25px;
+          }  
+          
+          .advantages-card-icon {
+          flex-basis: calc((100% - 90px) / 4);
+          height: 120px;
+          width: 270px; 
+          justify-content: center;
+          align-items: center;
+          }
+
 .our-advantages-list {
     display: flex;
-    gap: 25px; 
+    gap: 30px; 
 }
 
 .our-advantages-list .advantages {
@@ -227,10 +303,9 @@ flex-basis: calc((100% - 90px) / 4);
  /* Чим ми займаємось */
 
          .what-we-do {
-            padding-bottom: 94px;
+           padding-bottom: 94px;
            background-color: var(--brend-color);
           }
-
 
               .what-we-do .title {
                 font-weight: 700;
@@ -277,11 +352,18 @@ flex-basis: calc((100% - 90px) / 4);
                 color: var(--brend-text-color);
                 margin-bottom: 10px;
                 text-align: center;
-               }
+                }
+
+                .team-list-men {
+                    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                     0px 1px 1px rgba(0, 0, 0, 0.14), 
+                     0px 2px 1px rgba(0, 0, 0, 0.2);
+                    border-radius: 0px 0px 4px 4px;
+}
 
 .team-list {
     display: flex;
-}
+    }
 
 img {
     display: block;
@@ -301,7 +383,7 @@ img {
         font-size: 16px;
         line-height: 1.19;
         color: #757575;
-        
+        margin-bottom: 16px;
         text-align: center;
 }
 
@@ -309,9 +391,106 @@ img {
     display: block;
     padding-top: 30px;
     background: var(--brend-color);
-    border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
     }
+
+    .team-social {
+        display: flex;
+        margin-right: 32px;
+        margin-left: 32px;
+        gap: 10px;
+        }
+
+    .team-social-card {
+        display: block;
+        flex-basis: calc((100% - 30px) / 4);
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        width: 44px;
+        height: 44px;
+       border-radius: 50%;
+    }
+
+    .team-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        width: 44px;
+        height: 44px;
+    }
+    .team-icon:hover {
+        background-color: #2196F3;
+        border-radius: 50%;
+    }
+
+    .team-icon-card {
+        fill: #afb1b8;
+        width: 20px;
+        height: 20px;
+    }
+
+    .team-icon .team-icon-card:hover {
+       fill: var(--brend-color);
+       background-color: #2196F3;
+       }
+
+    /* Our customers */
+
+    .customers {
+        padding-top: 87px;
+        padding-bottom: 101px;
+        background-color: var(--brend-color)
+            
+    }
+
+    .customers .title {
+        margin-bottom: 50px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        color: var(--brend-text-color);
+    }
+    .customers-list {
+        display: flex;
+        gap: 30px;
+        padding: 16px; 
+        }
+
+       .customers-list-card {
+        display: flex;
+        flex-basis: calc((100% - 150px) / 6);
+         height: 92px;
+        width: 170px; 
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        }
+
+        .customers-list-card:hover {
+            fill: #2196F3;
+            border: 1px solid #2196F3;
+        }
+
+      .customers-list-link {
+        display: inline-block;
+        justify-content: center; 
+        
+      }
+
+      .customer-icon {
+        fill: #AFB1B8; 
+      }
+
+      .customers-list-link:hover svg,
+      .customers-list-link:focus svg {
+        fill: #2196F3;
+      }
 
 /* Button */
 
@@ -373,6 +552,9 @@ img {
     color: var(--brend-color);
     border: none;
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Footer */
@@ -382,7 +564,6 @@ img {
     background-color: #2F303A;
 }
  /* логотип */
-
 
  .footer .logo {
     display: inline-block;
@@ -433,7 +614,62 @@ color: var(--brend-color);
 }
 
 
+    /* icons */
 
+    .footer-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        color: var(--brend-color);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    } 
+    .footer-list {
+        display: block;
+    }
+    .footer-icon {
+        height: 44px;
+        width: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        fill: var(--brend-color);
+
+    }
+    .footer-icon:hover {
+        background: #2196F3;
+    }
+    .footer-icon:hover svg {
+        fill: var(--brend-color);
+    } 
+
+    .footer-list {
+        display: flex;
+        gap: 10px;
+      }
+    
+    .footer-social-list {
+        flex-basis: calc((100% - 30px) / 4);     
+    }
+
+    .container-footer-insta{
+        display: block;
+        width: 206px;
+        justify-content: center;
+        margin-left: 70px;
+              
+      }
+      .container-footer {
+        display: block;
+       }
+
+      .footerlogo {
+        display: flex;
+      }
+      
 /* ПОРТФОЛІО */
 
 .portfolio {
@@ -494,11 +730,19 @@ color: var(--brend-color);
     border-width: 0px 1px 1px 1px;
     }
 
+    .promo:hover,
+    .promo:active {
+        border: 1px solid #EEEEEE;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px
+                    rgba(0, 0, 0, 0.16); 
+    }
+
 .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;        
+    gap: 30px;      
  }
 
  .card .item {
@@ -515,10 +759,6 @@ color: var(--brend-color);
 .item a {
     display: block;
 }
-
-
-
-
 
 
 
