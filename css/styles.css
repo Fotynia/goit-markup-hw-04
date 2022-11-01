@@ -149,15 +149,11 @@ margin-right: 0px;
 .header .contacts a.phone:focus {
     color: var(--accent-color);
 }
+
 .contacts {
     display: flex;
     margin-left: auto;
-   
-}
-
-    /* .contacts .contacts-item {
-   тут був колір
-       } */
+  }
 
  .contacts .contacts-item + .contacts-item {
 margin-left: 50px;
@@ -169,6 +165,7 @@ margin-left: 50px;
      padding-bottom: 32px;
      margin-left: auto;
     }
+
 .svgadres {
     display: flex;
     width: 16px;
@@ -176,22 +173,32 @@ margin-left: 50px;
     margin-right: 10px;
     background-color: var(--brend-color);
     background-size: contain;
-    color: #757575;
-    
+    color: #757575;    
 }
+
+.svgphone {
+    display: flex;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background-color: var(--brend-color);
+    background-size: contain;
+    color: #757575;  
+}
+
+
 .contacts-item {
     display: flex;
     align-items: center;
 }
+.contacts-item:hover svg {
+    fill: #2196F3;
+}
 
-
-contacts.contacts-item.svgadres:hover use {
+contacts.contacts-item.svgadres:hover {
     display: block;
     color: #2196F3;
   }
-
-
-  
 
  /* OVERLAY */
 
@@ -226,7 +233,6 @@ contacts.contacts-item.svgadres:hover use {
         text-transform: uppercase;
         color: var(--brend-color);
         margin-bottom: 35px;
-        
        }
 
        /* Наші переваги */
@@ -234,7 +240,6 @@ contacts.contacts-item.svgadres:hover use {
        .advantages-card-icon {
         display: flex;
         background-color:#F5F4FA;
-      
        }
 
        .advantages-icon {
@@ -243,11 +248,7 @@ contacts.contacts-item.svgadres:hover use {
        width: 70px;
        }
 
-       .our-advantages {
-        outline: 2px solid slateblue;
-       }
-      
-        .our-advantages .title {
+               .our-advantages .title {
                 font-weight: 700;
                 font-size: 14px;
                 line-height: 1.14;
@@ -420,11 +421,16 @@ img {
         margin: 0px;
         width: 44px;
         height: 44px;
-    }
+        }
+
     .team-icon:hover {
         background-color: #2196F3;
         border-radius: 50%;
-    }
+       }
+
+    .team-icon:hover svg {
+         fill: var(--brend-color);
+        }
 
     .team-icon-card {
         fill: #afb1b8;
@@ -432,18 +438,12 @@ img {
         height: 20px;
     }
 
-    .team-icon .team-icon-card:hover {
-       fill: var(--brend-color);
-       background-color: #2196F3;
-       }
-
     /* Our customers */
 
     .customers {
         padding-top: 87px;
         padding-bottom: 101px;
-        background-color: var(--brend-color)
-            
+        background-color: var(--brend-color)       
     }
 
     .customers .title {
@@ -464,7 +464,7 @@ img {
        .customers-list-card {
         display: flex;
         flex-basis: calc((100% - 150px) / 6);
-         height: 92px;
+        height: 92px;
         width: 170px; 
         justify-content: center;
         align-items: center;
@@ -477,19 +477,17 @@ img {
             border: 1px solid #2196F3;
         }
 
+        .customers-list-card:hover svg {
+            fill: #2196F3;
+        }
+
       .customers-list-link {
         display: inline-block;
-        justify-content: center; 
-        
+        justify-content: center;  
       }
 
       .customer-icon {
         fill: #AFB1B8; 
-      }
-
-      .customers-list-link:hover svg,
-      .customers-list-link:focus svg {
-        fill: #2196F3;
       }
 
 /* Button */
@@ -506,8 +504,6 @@ img {
    cursor: pointer;
     padding: 6px 22px;
   }
-
-
 
 .hero .button {
     display: inline-block;
@@ -668,6 +664,7 @@ color: var(--brend-color);
 
       .footerlogo {
         display: flex;
+        align-items: baseline;
       }
       
 /* ПОРТФОЛІО */
