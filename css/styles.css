@@ -237,6 +237,18 @@ contacts.contacts-item.svgadres:hover {
 
        /* Наші переваги */
 
+       .our-advantages-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        border:1px solid #EEEEEE;
+        border-width: 0px 1px 1px 1px;
+        background-color:#F5F4FA;
+       }
+
        .advantages-card-icon {
         display: flex;
         background-color:#F5F4FA;
@@ -246,6 +258,7 @@ contacts.contacts-item.svgadres:hover {
        background-position: center;
        height: 70px;
        width: 70px;
+       background-color:#F5F4FA;
        }
 
                .our-advantages .title {
@@ -266,6 +279,7 @@ contacts.contacts-item.svgadres:hover {
             display: flex;
             gap: 30px;
             margin-bottom: 25px;
+            
           }  
           
           .advantages-card-icon {
